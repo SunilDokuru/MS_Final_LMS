@@ -1,0 +1,25 @@
+/*
+ *      This File gives the basic information about implementation part of each component
+ */
+
+Implementing Student Appointments:
+
+    Display the 2 weeks from today's date schedule results from admin Schedule whose booked value is 'false'
+    
+    Appointment Booking:
+        For the booking the Booking method has to do the following functionalities:
+            Insert the record into appointments table
+            Change of value of booked in admin schedule to true
+            Use this table for both admin and student
+
+        For deleting an appointment:
+
+        (For this use the same method's available for both controllers and DAO logic)
+                                    (make any changes required)
+            Student:
+                When Student deletes an appointment, remove from appointments table,
+                Change the value of booked from true back to false
+            
+            Admin:
+                When admin deletes an appointment, delete the value from the appointments table
+                and schedule table.
