@@ -91,7 +91,7 @@ public class FinalGradesController {
                     session.setAttribute("studentFinalGrades", finalGrades);                    
                 } catch(NullPointerException ex) {
                         attributes.addFlashAttribute("errormessage", "There was an error while retrieving grades, Please Try Again");
-                        return "redirect:/studentDashNoard.htm";
+                        return "redirect:/studentDashBoard.htm";
                 }
                 return "studentFinalGrades";
             } else {
